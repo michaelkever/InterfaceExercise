@@ -14,13 +14,10 @@ namespace Interface
             Console.WriteLine($"Name: [{FirstName} {LastName}]");
         }
 
-        void IQuittable.Quit()
+        public void Quit()
         {
-            throw new NotImplementedException();
-        }
-        public string IQuittable();
-        {
-            Console.ReadLine(IQuittable);
+            Console.WriteLine("Program Over, Exit.");
+            Console.ReadLine();
         }
     }
 
